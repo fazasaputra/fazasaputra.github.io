@@ -1,0 +1,213 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	mainn: '';
+	mainn: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style */
+
+body {
+	font: 16px/28px arial, Lucida Sans, Grenda, sans-serif;
+	background-color: #eaeaea;
+	background-image: url(ml.png);
+	background-size: 1000px;
+	background-position: center;
+
+}
+
+.topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: lightskyblue;
+	z-index: 9999px;
+}
+
+.container {
+	width: 960px;
+	margin:80px auto;
+	background-color: white;
+	position: relative;
+}
+
+.gth {
+	width: 200px;
+	height: 200px;
+	background-image: url(https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: -10px;
+    right: -50px;
+}
+
+.header {
+	padding: 20px;
+	padding-bottom: 10px;
+}
+.header .thead {
+	font-size: 30px;
+	font-weight: bold;
+}
+.header ul li {
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 5px;
+}
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+.header a:hover {
+	background-color: lightskyblue;
+	color: whitesmoke;
+}
+.banner {
+	height: 320px;
+	background-image: url(oratau.png);
+	background-size: cover;
+	background-position: 0 -200;
+	border-top: 5px solid cyan;
+	border-bottom: 5px solid black;
+}
+.mainn {
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.mainn h2 {
+	margin-left: 8px;
+	font-size: 28px;
+	font-weight: bold;
+}
+.mainn .sixteen {
+	font-size: 11px;
+	margin-top: -5px;
+	word-spacing: 2px;
+	line-height: 15px;
+}
+.mainn .writed a {
+	color: salmon;
+	text-decoration: none;
+}
+.mainn .writed {
+	margin-left: 8px;
+}
+.mainn p {
+	margin-left: 8px;
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+.hidden2 {
+	text-decoration: none;
+	color: #6944ff;
+}
+/* sidebar */
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+.sidebar h3 {
+	font-weight: bold;
+	color: #666;
+}
+.sidebar img {
+	width: 80px;
+	height: 80px;
+	float: left;
+	padding-right: 10px;
+}
+.sidebar p {
+	font: 12px/18px arial;
+}
+
+.abt {
+	text-decoration: none;
+	color: #6944ff;
+}
+
+.footer {
+	background-color: #333;
+	padding: 10px;
+}
+.footer .copyright {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* MICRO FIX */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
